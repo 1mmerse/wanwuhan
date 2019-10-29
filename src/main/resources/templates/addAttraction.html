@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加景点测试</title>
+</head>
+<body>
+<h2>添加景点</h2>
+<hr/>
+<form method="post"enctype="multipart/form-data" action="/addAttraction">
+    <p>
+        景点名<input type="text" name="attractionName">
+    </p>
+    <p>
+        标题图<input type="file" name="titleImage">
+    </p>
+    <p>
+        文件<input type="file" name="images">
+    </p>
+    <p>
+        文件<input type="file" name="images">
+    </p>
+    <p>
+        文件<input type="file" name="images">
+    </p>
+    <p>
+        景点介绍<input type="text" name="attractionIntroduction">
+    </p>
+    <p>
+        <input type="submit" value="上传">
+    </p>
+</form>
+
+
+<h2>通过景点id查找景点测试</h2>
+<hr/>
+<form method="post"enctype="multipart/form-data" action="/findAttractionById">
+    <p>
+        <input type ="text" name = "attractionId">
+    </p>
+    <p>
+        <input type="submit" value="查找">
+    </p>
+</form>
+<h2>通过景点id查找相关评论测试</h2>
+<hr/>
+<form method="post"enctype="multipart/form-data" action="/findCommentByAttractionId">
+    <p>
+        <input type ="text" name = "attractionId">
+    </p>
+    <p>
+        <input type="submit" value="查找">
+    </p>
+</form>
+
+</body>
+</html>

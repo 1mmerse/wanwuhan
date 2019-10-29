@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加评论测试</title>
+</head>
+<body>
+<h2>
+    添加评论
+</h2>
+<form method="post"enctype="multipart/form-data" action="/addComment">
+    <p>
+        景点id<input type="text" name="attractionId">
+    </p>
+    <p>
+        用户openid<input type="text" name="openid">
+    </p>
+
+    <p>
+        文件<input type="file" name="images">
+    </p>
+    <p>
+        文件<input type="file" name="images">
+    </p>
+    <p>
+        文件<input type="file" name="images">
+    </p>
+    <p>
+        评论内容<input type="text" name="commentContent">
+    </p>
+    <p>
+        <input type="submit" value="上传">
+    </p>
+</form>
+
+<h2>通过用户openid查找相关评论测试</h2>
+<hr/>
+<form method="post"enctype="multipart/form-data" action="/findCommentByUserOpenid">
+    <p>
+        <input type ="text" name = "openid">
+    </p>
+    <p>
+        <input type="submit" value="查找">
+    </p>
+</form>
+</body>
+</html>
